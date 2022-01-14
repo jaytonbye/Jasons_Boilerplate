@@ -31,9 +31,8 @@ function CreateAccount() {
         body: JSON.stringify({
           email: email,
           password: password,
-          role: "wrestler",
+          role: "Default Role",
           real_email: realEmail,
-          tenant: "dynamic",
         }),
       };
 
@@ -48,7 +47,7 @@ function CreateAccount() {
           sessionStorage.setItem("token", data.token);
           sessionStorage.setItem("UID", data.UID);
         });
-        history.push("/profilepage");
+        history.push("/homepage");
       });
     } catch (error) {
       // error is already logged from apiService

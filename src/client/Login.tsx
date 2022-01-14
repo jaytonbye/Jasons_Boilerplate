@@ -28,7 +28,7 @@ function Login() {
 
         successfulLogin(userID);
         if (token) {
-          history.push("/loggedin");
+          history.push("/homepage");
         }
       })
       .catch(() => {

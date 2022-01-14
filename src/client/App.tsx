@@ -23,7 +23,7 @@ const App = (props: AppProps) => {
           <Route exact path="/createAccount">
             <CreateAccount />
           </Route>
-          <Route exact path="/loggedin">
+          <Route exact path="/homepage">
             <LoggedIn />
           </Route>
           <Route path="/passwordResetLandingPage/:encryptedIdInUrl">
