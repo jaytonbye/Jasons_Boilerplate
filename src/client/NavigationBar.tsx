@@ -17,8 +17,8 @@ export default function NavigationBar() {
 
   let history = useHistory();
   let logout = () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("UID");
+    sessionStorage.removeItem("token");
+    sessionStorage.removeItem("UID");
     history.push("/");
   };
 
